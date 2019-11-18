@@ -1,0 +1,14 @@
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\Library.dll.config
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\Library.dll
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\Library.pdb
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\EntityFramework.dll
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\EntityFramework.xml
+C:\Ostruks\ComputerGamesEF\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.dll
+C:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.pdb
+c:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.csprojAssemblyReference.cache
+c:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.Migrations.addGenrePublisherGame.resources
+c:\Ostruks\ComputerGamesEF\Library\obj\Debug\Library.csproj.GenerateResource.cache
