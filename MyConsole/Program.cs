@@ -1,12 +1,15 @@
-﻿using Library.Entities;
-using Repositories;
+﻿using BL.Controllers;
+using BL.MoldesDTO;
+using DAL;
 using System;
 
 namespace MyConsole
 {
     class Program
     {
-        static GameRepository db = new GameRepository();
+        static IController<GameDTO> dbGames = new GameController();
+        static IController<GenreDTO> dbGenres = new GenreController();
+        static IController<PublisherDTO> dbPublishers = new PublisherController();
 
         static void Main(string[] args)
         {
@@ -18,17 +21,17 @@ namespace MyConsole
             DisplayById("Genres", 1);
             DisplayById("Publishers", 1);
 
-            Create("Games", new Game()
+            Create("Games", new GameDTO()
             {
                 Name = "Chuvak",
                 YearOfIssue = 2018,
-                Genre = new Genre() { Name = "MMORPG", Description = "Description MMORPG" },
-                Publisher = new Publisher() { Name = "Man", License = 111222 }
+                Genre_Id = 1,
+                Publisher_Id = 2
             });
 
-            Update("MMORPG", "Genres", new Genre() { Name = "MMORPG2", Description = "Description MMORPG" });
-            Update("Man", "Publishers", new Publisher() { Name = "Man2", License = 111333 });
-            Update("Chuvak", "Games", new Game()
+            Update("MMORPG", "Genres", new GenreDTO() { Name = "MMORPG2", Description = "Description MMORPG" });
+            Update("Man", "Publishers", new PublisherDTO() { Name = "Man2", License = 111333 });
+            Update("Chuvak", "Games", new GameDTO()
             {
                 Name = "Chuvak2",
                 YearOfIssue = 2018,
@@ -48,7 +51,7 @@ namespace MyConsole
             Display("Genres");
             Display("Publishers");
 
-            Create("Games", new Game()
+            Create("Games", new GameDTO()
             {
                 Name = "Chuvak",
                 YearOfIssue = 1965,
@@ -64,16 +67,16 @@ namespace MyConsole
             switch (table)
             {
                 case "Publishers":
-                    Publisher publisher = tclass as Publisher;
-                    Console.WriteLine(db.CreatePublisher(publisher));
+                    PublisherDTO publisher = tclass as PublisherDTO;
+                    Console.WriteLine(dbPublishers.Create(publisher));
                     break;
                 case "Genres":
-                    Genre genre = tclass as Genre;
-                    Console.WriteLine(db.CreateGenre(genre));
+                    GenreDTO genre = tclass as GenreDTO;
+                    Console.WriteLine(dbGenres.Create(genre));
                     break;
                 case "Games":
-                    Game game = tclass as Game;
-                    Console.WriteLine(db.CreateGame(game));
+                    GameDTO game = tclass as GameDTO;
+                    Console.WriteLine(dbGames.Create(game));
                     break;
             }
         }
@@ -83,16 +86,16 @@ namespace MyConsole
             switch (table)
             {
                 case "Publishers":
-                    Publisher publisher = tclass as Publisher;
-                    db.UpdatePublisher(name, publisher);
+                    PublisherDTO publisher = tclass as PublisherDTO;
+                    dbPublishers.Update(name, publisher);
                     break;
                 case "Genres":
-                    Genre genre = tclass as Genre;
-                    db.UpdateGenre(name, genre);
+                    GenreDTO genre = tclass as GenreDTO;
+                    dbGenres.Update(name, genre);
                     break;
                 case "Games":
-                    Game game = tclass as Game;
-                    db.UpdateGame(name, game);
+                    GameDTO game = tclass as GameDTO;
+                    dbGames.Update(name, game);
                     break;
             }
         }
@@ -102,13 +105,13 @@ namespace MyConsole
             switch (table)
             {
                 case "Games":
-                    db.DeleteGame(id);
+                    dbGames.DeleteById(id);
                     break;
                 case "Genres":
-                    db.DeleteGenre(id);
+                    dbGenres.DeleteById(id);
                     break;
                 case "Publishers":
-                    db.DeletePublisher(id);
+                    dbPublishers.DeleteById(id);
                     break;
             }
         }
@@ -118,7 +121,7 @@ namespace MyConsole
             switch (table)
             {
                 case "Games":
-                    var games = license != 0 ? db.GetGames(license) : db.GetGames();
+                    var games = license != 0 ? dbGames.GetAll(license) : dbGames.GetAll();
 
                     foreach (var game in games)
                     {
@@ -126,13 +129,13 @@ namespace MyConsole
                     }
                     break;
                 case "Genres":
-                    foreach (var genre in db.GetGenres())
+                    foreach (var genre in dbGenres.GetAll())
                     {
                         Console.WriteLine(genre);
                     }
                     break;
                 case "Publishers":
-                    foreach (var publisher in db.GetPublishers())
+                    foreach (var publisher in dbPublishers.GetAll())
                     {
                         Console.WriteLine(publisher);
                     }
@@ -147,13 +150,13 @@ namespace MyConsole
             switch (table)
             {
                 case "Games":
-                    Console.WriteLine(db.GetGame(id));
+                    Console.WriteLine(dbGames.GetById(id));
                     break;
                 case "Genres":
-                    Console.WriteLine(db.GetGenre(id));
+                    Console.WriteLine(dbGenres.GetById(id));
                     break;
                 case "Publishers":
-                    Console.WriteLine(db.GetPublisher(id));
+                    Console.WriteLine(dbPublishers.GetById(id));
                     break;
             }
 

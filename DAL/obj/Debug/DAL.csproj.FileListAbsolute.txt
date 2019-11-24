@@ -1,0 +1,12 @@
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\DAL.dll.config
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\DAL.dll
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\DAL.pdb
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\EntityFramework.dll
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\EntityFramework.SqlServer.dll
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\EntityFramework.xml
+e:\Ostruk\Git\ComputerGamesEF\DAL\bin\Debug\EntityFramework.SqlServer.xml
+e:\Ostruk\Git\ComputerGamesEF\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+e:\Ostruk\Git\ComputerGamesEF\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+e:\Ostruk\Git\ComputerGamesEF\DAL\obj\Debug\DAL.csproj.CopyComplete
+e:\Ostruk\Git\ComputerGamesEF\DAL\obj\Debug\DAL.dll
+e:\Ostruk\Git\ComputerGamesEF\DAL\obj\Debug\DAL.pdb

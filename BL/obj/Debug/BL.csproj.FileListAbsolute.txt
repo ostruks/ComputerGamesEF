@@ -1,0 +1,15 @@
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\BL.dll
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\BL.pdb
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\AutoMapper.dll
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\DAL.dll
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\EntityFramework.dll
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\DAL.pdb
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\DAL.dll.config
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\AutoMapper.pdb
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\AutoMapper.xml
+e:\Ostruk\Git\ComputerGamesEF\BL\bin\Debug\EntityFramework.xml
+e:\Ostruk\Git\ComputerGamesEF\BL\obj\Debug\BL.csprojAssemblyReference.cache
+e:\Ostruk\Git\ComputerGamesEF\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+e:\Ostruk\Git\ComputerGamesEF\BL\obj\Debug\BL.csproj.CopyComplete
+e:\Ostruk\Git\ComputerGamesEF\BL\obj\Debug\BL.dll
+e:\Ostruk\Git\ComputerGamesEF\BL\obj\Debug\BL.pdb

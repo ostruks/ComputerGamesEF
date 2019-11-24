@@ -61,13 +61,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Library\Library.csproj">
-      <Project>{8F8F3DD9-3F91-4D89-B553-9F9812DA4430}</Project>
-      <Name>Library</Name>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{8D852B81-2510-40C8-B24E-5481064C23BE}</Project>
+      <Name>BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repositories\Repositories.csproj">
-      <Project>{3B25CEA9-5BCC-4534-914A-FC029967B2F5}</Project>
-      <Name>Repositories</Name>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{784FE08E-21BE-48F5-A596-B0A511A04157}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
